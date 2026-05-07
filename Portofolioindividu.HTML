@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio | Creative Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .text-gradient {
+            background: linear-gradient(to right, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#fafafa] text-slate-900">
+
+    <nav class="fixed w-full top-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-extrabold text-xl tracking-tighter italic uppercase">Ryden<span class="text-blue-600">Timothy.</span></span>
+            <div class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-widest">
+                <a href="#about" class="hover:text-blue-600 transition">Tentang</a>
+                <a href="#work" class="hover:text-blue-600 transition">Karya</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="pt-40 pb-20 px-6">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="flex-1 text-center md:text-left">
+                <div class="inline-block px-4 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-bold uppercase tracking-widest mb-6">
+                    Tersedia untuk Proyek Baru
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                    Saya Membuat <br><span class="text-gradient">Dunia Digital</span> Jadi Indah.
+                </h1>
+                <p class="text-gray-500 text-lg mb-8 max-w-lg leading-relaxed">
+                    Halo! Saya seorang **UI/UX Designer** dan **Frontend Developer** yang fokus pada pembuatan pengalaman pengguna yang intuitif dan visual yang estetik.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#work" class="px-8 py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-blue-600 transition-all shadow-xl shadow-blue-100">Lihat Portofolio</a>
+                    <a href="mailto:email@anda.com" class="px-8 py-4 bg-white border border-gray-200 rounded-2xl font-bold hover:bg-gray-50 transition">Kirim Pesan</a>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <div class="w-64 h-64 md:w-80 md:h-80 bg-blue-600 rounded-[3rem] rotate-6 absolute inset-0 -z-10 opacity-10"></div>
+                <div class="w-64 h-64 md:w-80 md:h-80 bg-gray-200 rounded-[3rem] overflow-hidden border-4 border-white shadow-2xl">
+                    <img src="WIN_20251214_22_20_39_Pro.jpg" alt="Foto Profil" class="object-cover w-full h-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="mb-16 flex justify-between items-end">
+                <div>
+                    <h2 class="text-3xl font-extrabold mb-2 italic">Karya Terpilih</h2>
+                    <p class="text-gray-500">Proyek-proyek yang mendefinisikan kemampuan saya.</p>
+                </div>
+                <div class="hidden md:block h-[1px] flex-1 bg-gray-100 mx-10 mb-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-3xl mb-6 bg-gray-100 aspect-video shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800" alt="Work 1" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <span class="text-blue-600 text-xs font-black uppercase tracking-widest">Web Application</span>
+                    <h3 class="text-2xl font-bold mt-2 mb-3">Fintech Dashboard 2.0</h3>
+                    <p class="text-gray-500 leading-relaxed mb-4">Mendesain ulang sistem manajemen keuangan untuk startup ternama di Jakarta.</p>
+                </div>
+
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-3xl mb-6 bg-gray-100 aspect-video shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800" alt="Work 2" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    </div>
+                    <span class="text-purple-600 text-xs font-black uppercase tracking-widest">E-Commerce</span>
+                    <h3 class="text-2xl font-bold mt-2 mb-3">Minimalist Fashion Store</h3>
+                    <p class="text-gray-500 leading-relaxed mb-4">Membangun platform belanja online dengan fokus pada kecepatan dan kemudahan akses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-20 bg-slate-900 text-white rounded-t-[3rem]">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-8">Punya Ide Brilian? <br><span class="text-blue-400">Mari Kita Wujudkan.</span></h2>
+            <p class="text-gray-400 mb-10 max-w-lg mx-auto">Saya selalu terbuka untuk kolaborasi menarik atau sekadar berbincang tentang teknologi dan desain.</p>
+            
+            <a href="mailto:hello@anda.com" class="inline-block px-10 py-5 bg-blue-600 text-white rounded-2xl font-bold text-xl hover:scale-105 transition active:scale-95 shadow-2xl shadow-blue-500/20">
+                Hubungi Saya Sekarang
+            </a>
+
+            <div class="mt-20 pt-10 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-gray-500 text-sm">&copy; 2026 Ryden. Dibuat dengan Kode & Kopi.</p>
+                <div class="flex space-x-6 text-gray-400 font-bold text-xs uppercase tracking-widest">
+                    <a href="#" class="hover:text-white transition">Instagram</a>
+                    <a href="#" class="hover:text-white transition">LinkedIn</a>
+                    <a href="#" class="hover:text-white transition">Dribbble</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
